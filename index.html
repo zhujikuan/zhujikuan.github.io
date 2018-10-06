@@ -140,6 +140,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?cac51881ae6485c2d7b2b5de10bf26b6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -360,7 +370,7 @@
                 
               
 
-              <time title="Created: 2018-09-19 11:03:29 / Modified: 10:59:05" itemprop="dateCreated datePublished" datetime="2018-09-19T11:03:29+08:00">2018-09-19</time>
+              <time title="Created: 2018-09-19 11:03:29 / Modified: 15:33:30" itemprop="dateCreated datePublished" datetime="2018-09-19T11:03:29+08:00">2018-09-19</time>
             
 
             
@@ -420,7 +430,7 @@
           
             <p>婼姐的方法真的很巧妙，能理解，但是不知道如果是自己该怎样想出那种方法。<br>所以仅仅把婼姐的代码当做学习用，还是得自己来实现啊。<br>参考了网上很多的博客，真的不好，直接贴代码，思路很差劲的也有。下面这是我觉得最能理解的好方法。<br>思路分析：<br>1、a=a+b，当a&gt;1000时，用ans[i++]数组存储a%1000的值，a=a/1000;<br>2、首先将a带符号输出，若i&gt;0，输出“，”，然后逆向输出”ans[i]’数组，类似地，若i&gt;0，输出“，”。<br>注意输出的时候0有可能是三个0；（例如1000）</p>
 <hr>
-<p>代码有点low，强迫自己学习C++中</p>
+<p><code>代码有点low，强迫自己学习C++中</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main() &#123;</span><br><span class="line">    int a,b;</span><br><span class="line">    cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    a+=b;</span><br><span class="line">    if(a&lt;0)&#123;</span><br><span class="line">        a=-a;</span><br><span class="line">        cout &lt;&lt; &quot;-&quot;;</span><br><span class="line">    &#125;else if(a==0)&#123;</span><br><span class="line">        cout &lt;&lt; &quot;0&quot;;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    vector&lt;int&gt; ve;</span><br><span class="line">    while(a!=0)&#123;</span><br><span class="line">        ve.push_back(a%1000);</span><br><span class="line">        a/=1000;</span><br><span class="line">    &#125;</span><br><span class="line">    for(int i=ve.size()-1;i&gt;=0;i--)&#123;</span><br><span class="line">        if(i!=ve.size()-1) printf(&quot;,%03d&quot;,ve[i]);</span><br><span class="line">        else cout &lt;&lt; ve[i];</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         

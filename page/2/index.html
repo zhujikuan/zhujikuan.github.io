@@ -140,6 +140,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?cac51881ae6485c2d7b2b5de10bf26b6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -1583,164 +1593,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhujikuan.com/【PAT】B1010 一元多项式求导.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="万能的翔王大人">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zhujikuan's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/【PAT】B1010 一元多项式求导.html" itemprop="url">
-                  【PAT】B1010 一元多项式求导
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-09-09 16:54:40 / Modified: 18:56:39" itemprop="dateCreated datePublished" datetime="2018-09-09T16:54:40+08:00">2018-09-09</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/PAT-B/" itemprop="url" rel="index"><span itemprop="name">PAT-B</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在输入时就进行结果的计算，忽略常数项，<br>顺序输出</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">struct duo&#123;</span><br><span class="line">    int xishu,zhishu;</span><br><span class="line">&#125;M;</span><br><span class="line">int main()&#123;</span><br><span class="line">    vector&lt;duo&gt; arr;//结构体向量</span><br><span class="line">    while(scanf(&quot;%d %d&quot;,&amp;M.xishu,&amp;M.zhishu)!=EOF)&#123;</span><br><span class="line">        M.xishu*=M.zhishu;</span><br><span class="line">        M.zhishu--;</span><br><span class="line">        if(M.zhishu&gt;=0)</span><br><span class="line">            arr.push_back(M);</span><br><span class="line">    &#125;</span><br><span class="line">    if(arr.size()==0) printf(&quot;0 0&quot;);//如果结果为0</span><br><span class="line">    else&#123;</span><br><span class="line">        for(int i=0;i&lt;arr.size();i++)&#123;</span><br><span class="line">            if(i!=0)printf(&quot; &quot;);</span><br><span class="line">            printf(&quot;%d %d&quot;,arr[i].xishu,arr[i].zhishu);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zhujikuan.com/【PAT】B1009 说反话.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1847,6 +1699,164 @@
           
             <p>在输入时直接分别将每个单词放入字符串，逆序输出字符串数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">    int num=0;</span><br><span class="line">    char ans[90][90];</span><br><span class="line">    while(scanf(&quot;%s&quot;,ans[num])!=EOF)</span><br><span class="line">        num++;</span><br><span class="line">    for(int i=num-1;i&gt;=0;i--)&#123;</span><br><span class="line">        printf(&quot;%s&quot;,ans[i]);</span><br><span class="line">        if(i&gt;0) printf(&quot; &quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhujikuan.com/【PAT】B1010 一元多项式求导.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="万能的翔王大人">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zhujikuan's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/【PAT】B1010 一元多项式求导.html" itemprop="url">
+                  【PAT】B1010 一元多项式求导
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-09 16:54:40 / Modified: 18:56:39" itemprop="dateCreated datePublished" datetime="2018-09-09T16:54:40+08:00">2018-09-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/PAT-B/" itemprop="url" rel="index"><span itemprop="name">PAT-B</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在输入时就进行结果的计算，忽略常数项，<br>顺序输出</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;vector&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">struct duo&#123;</span><br><span class="line">    int xishu,zhishu;</span><br><span class="line">&#125;M;</span><br><span class="line">int main()&#123;</span><br><span class="line">    vector&lt;duo&gt; arr;//结构体向量</span><br><span class="line">    while(scanf(&quot;%d %d&quot;,&amp;M.xishu,&amp;M.zhishu)!=EOF)&#123;</span><br><span class="line">        M.xishu*=M.zhishu;</span><br><span class="line">        M.zhishu--;</span><br><span class="line">        if(M.zhishu&gt;=0)</span><br><span class="line">            arr.push_back(M);</span><br><span class="line">    &#125;</span><br><span class="line">    if(arr.size()==0) printf(&quot;0 0&quot;);//如果结果为0</span><br><span class="line">    else&#123;</span><br><span class="line">        for(int i=0;i&lt;arr.size();i++)&#123;</span><br><span class="line">            if(i!=0)printf(&quot; &quot;);</span><br><span class="line">            printf(&quot;%d %d&quot;,arr[i].xishu,arr[i].zhishu);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
